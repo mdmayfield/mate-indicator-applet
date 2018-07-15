@@ -143,21 +143,6 @@ MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletAppmenuFactory",
 #endif
 GOutputStream * log_file = NULL;
 
-/*****************
- * Hotkey support
- * **************/
-#ifdef INDICATOR_APPLET
-gchar * hotkey_keycode = "<Super>M";
-#endif
-#ifdef INDICATOR_APPLET_SESSION
-gchar * hotkey_keycode = "<Super>S";
-#endif
-#ifdef INDICATOR_APPLET_COMPLETE
-gchar * hotkey_keycode = "<Super>S";
-#endif
-#ifdef INDICATOR_APPLET_APPMENU
-gchar * hotkey_keycode = "<Super>F1";
-#endif
 
 /********************
  * Environment Names
@@ -707,22 +692,6 @@ load_indicators_from_indicator_files (GtkWidget *menubar, gint *indicators_loade
 }
 #endif  /* HAVE_AYATANA_INDICATOR_NG || HAVE_UBUNTU_INDICATOR_NG */
 
-static void
-hotkey_filter (char * keystring G_GNUC_UNUSED, gpointer data)
-{
-	g_return_if_fail(GTK_IS_MENU_SHELL(data));
-
-	/* Oh, wow, it's us! */
-	GList * children = gtk_container_get_children(GTK_CONTAINER(data));
-	if (children == NULL) {
-		g_debug("Menubar has no children");
-		return;
-	}
-
-	gtk_menu_shell_select_item(GTK_MENU_SHELL(data), GTK_WIDGET(g_list_last(children)->data));
-	g_list_free(children);
-	return;
-}
 
 static gboolean
 menubar_press (GtkWidget * widget,
@@ -1006,9 +975,6 @@ applet_fill_cb (MatePanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 	g_signal_connect(applet, "change-orient",
 			G_CALLBACK(matepanelapplet_reorient_cb), menubar);
 	gtk_container_set_border_width(GTK_CONTAINER(menubar), 0);
-
-	/* Add in filter func */
-	tomboy_keybinder_bind(hotkey_keycode, hotkey_filter, menubar);
 
 	load_modules(menubar, &indicators_loaded);
 #if HAVE_AYATANA_INDICATOR_NG || HAVE_UBUNTU_INDICATOR_NG
