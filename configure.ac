@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-indicator-applet], [1.22.0],[https://github.com/mate-desktop/mate-indicator-applet/issues])
+AC_INIT([mate-indicator-applet], [1.24.0],[https://github.com/mate-desktop/mate-indicator-applet/issues])
 AC_CONFIG_SRCDIR(src/applet-main.c)
 
 AM_CONFIG_HEADER(config.h)
@@ -9,7 +9,6 @@ AM_INIT_AUTOMAKE([no-dist-gzip dist-xz check-news])
 AM_MAINTAINER_MODE
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES])
 
-IT_PROG_INTLTOOL([0.35.0])
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_STDC_HEADERS
@@ -21,7 +20,7 @@ AC_CONFIG_MACRO_DIR([m4])
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 ###########################
-# Dependencies 
+# Dependencies
 ###########################
 
 GTK_REQUIRED_VERSION=3.22.0
@@ -237,13 +236,13 @@ AC_DEFUN([AC_DEFINE_PATH], [
 ###########################
 # Internationalization
 ###########################
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT([external])
 
 GETTEXT_PACKAGE=mate-indicator-applet
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of the default gettext domain])
 AC_DEFINE_PATH(MATELOCALEDIR, "${datadir}/locale", [locale directory])
-
-AM_GLIB_GNU_GETTEXT
 
 ##############################
 # ./configure Flags messings
@@ -258,7 +257,7 @@ else
   REAL_PREFIX=$prefix
 fi
 
-# Have to go $sysconfdir->$prefix/etc->/usr/local/etc   
+# Have to go $sysconfdir->$prefix/etc->/usr/local/etc
 # if you actually know how to code shell then fix this :-)
 SYSCONFDIR_TMP="$sysconfdir"
 old_prefix=$prefix

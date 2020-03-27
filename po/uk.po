@@ -1,112 +1,142 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mate-indicator-applet package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # zubr139, 2018
 # Микола Ткач <chistomov@gmail.com>, 2018
-# 
-#, fuzzy
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-21 16:19+0100\n"
+"Project-Id-Version: mate-indicator-applet 1.23.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-indicator-applet/"
+"issues\n"
+"POT-Creation-Date: 2020-03-26 22:09-0500\n"
 "PO-Revision-Date: 2018-03-11 18:40+0000\n"
 "Last-Translator: Микола Ткач <chistomov@gmail.com>, 2018\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
-#: ../src/applet-main.c:951
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Factory"
+msgstr ""
+
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:9
+#: src/applet-main.c:950
 msgid "Indicator Applet"
 msgstr "Аплет сповіщення"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:10
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "Звертає Вашу увагу на нові події"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
-#: ../src/applet-main.c:954
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:12
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:12
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:12
+msgid "mate-indicator-applet"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Complete Factory"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:9
+#: src/applet-main.c:953
 msgid "Indicator Applet Complete"
 msgstr "Аплет Індикатор готовий"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:10
 msgid "A unified applet containing all of the indicators."
 msgstr "Уніфікований аплет, що містить усі індикатори."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Appmenu Factory"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:9
 msgid "Indicator Applet Appmenu"
 msgstr "Меню програм аплету сповіщень"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:10
 msgid "A applet containing the application menus."
 msgstr "Аплет містить меню програм"
 
-#: ../src/applet-main.c:764
+#: src/applet-main.c:762
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License version 3, as published by"
-" the Free Software Foundation."
+"under the terms of the GNU General Public License version 3, as published by "
+"the Free Software Foundation."
 msgstr ""
 "Ця програма є вільним програмним забезпеченням: Ви маєте право "
 "розповсюджувати, та/або змінювати її за умови дотримання вимог ліцензії GNU "
 "General Public License ред.3, виданої Free Software Foundation."
 
-#: ../src/applet-main.c:767
+#: src/applet-main.c:765
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranties of MERCHANTABILITY, "
 "SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU "
 "General Public License for more details."
 msgstr ""
-"Це програмне забезпечення розповсюджується зі сподіванням, що воно стане Вам"
-" в нагоді, але БЕЗ БУДЬ-ЯКИХ ЗАПОРУК чи ЗОБОВ`ЯЗАНЬ; також виключно без "
+"Це програмне забезпечення розповсюджується зі сподіванням, що воно стане Вам "
+"в нагоді, але БЕЗ БУДЬ-ЯКИХ ЗАПОРУК чи ЗОБОВ`ЯЗАНЬ; також виключно без "
 "ЗАПОРУК ПРАЦЕЗДАТНОСТИ ПРОГРАМИ, чи ДОСТАТНОСТИ ЇЇ ЯКОСТИ чи ВІДПОВІДНОСТИ "
 "ПОСТАВЛЕНІЙ ЗАДАЧІ. Деталі читайте у ліцензії GNU General Public License."
 
-#: ../src/applet-main.c:771
+#: src/applet-main.c:769
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" this program.  If not, see <http://www.gnu.org/licenses/>."
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
 "Ви мали отримати копію GNU General Public License разом з цією програмою. "
 "Якщо цього не сталося, дивіться <http://www.gnu.org/licenses/>."
 
-#: ../src/applet-main.c:783
+#: src/applet-main.c:779
+msgid ""
+"Copyright © 2009-2010 Canonical, Ltd.\n"
+"Copyright © 2011-2020 MATE developers"
+msgstr ""
+
+#: src/applet-main.c:782
 msgid "An applet to hold your application menus."
 msgstr "Аплет містить меню Ваших програм"
 
-#: ../src/applet-main.c:785
+#: src/applet-main.c:784
 msgid "An applet to hold all of the system indicators."
 msgstr "Цей Аплет панелі зберігає усі повідомлення системи."
 
-#: ../src/applet-main.c:789
+#: src/applet-main.c:788
 msgid "translator-credits"
 msgstr ""
 "Yarema aka Knedlyk <yupadmin@gmail.com>,\n"
 "Микола Ткач <Stuartlittle1970@gmail.com>,\n"
 "Oleh Tsyupka <myr4yk@gmail.com>"
 
-#: ../src/applet-main.c:793
+#: src/applet-main.c:792
 msgid "MATE Website"
 msgstr "Сайт MATE"
 
-#: ../src/applet-main.c:938
+#: src/applet-main.c:937
 msgid "_About"
 msgstr "_Про програму"
 
-#: ../src/applet-main.c:957
+#: src/applet-main.c:956
 msgid "Indicator Applet Application Menu"
 msgstr "Меню програм аплету сповіщень"
 
-#. A label to allow for click through
-#: ../src/applet-main.c:1020
+#: src/applet-main.c:1018
 msgid "No Indicators"
 msgstr "Жодного індикатора"

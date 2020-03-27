@@ -1,64 +1,88 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mate-indicator-applet package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Allan Nordhøy <epost@anotheragency.no>, 2018
-# 
-#, fuzzy
+# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-21 16:19+0100\n"
+"Project-Id-Version: mate-indicator-applet 1.23.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-indicator-applet/"
+"issues\n"
+"POT-Creation-Date: 2020-03-26 22:09-0500\n"
 "PO-Revision-Date: 2018-03-11 18:40+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>, 2018\n"
-"Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/nb/)\n"
+"Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020\n"
+"Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/"
+"nb/)\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
-#: ../src/applet-main.c:951
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Factory"
+msgstr ""
+
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:9
+#: src/applet-main.c:950
 msgid "Indicator Applet"
 msgstr "Indikator miniprogram"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:10
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "En indikator for noe som trenger din oppmerksomhet på skrivebordet"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
-#: ../src/applet-main.c:954
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.mate.applets.Indicator.mate-panel-applet.desktop.in.in:12
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:12
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:12
+msgid "mate-indicator-applet"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Complete Factory"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:9
+#: src/applet-main.c:953
 msgid "Indicator Applet Complete"
 msgstr "Indikator miniprogram fullført"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.IndicatorComplete.mate-panel-applet.desktop.in.in:10
 msgid "A unified applet containing all of the indicators."
 msgstr "Et felles miniprogram som inneholder alle indikatorene."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:5
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:6
+msgid "Indicator Applet Appmenu Factory"
+msgstr ""
+
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:9
 msgid "Indicator Applet Appmenu"
 msgstr "Indikator miniprogram."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
+#: data/org.mate.applets.IndicatorAppmenu.mate-panel-applet.desktop.in.in:10
 msgid "A applet containing the application menus."
 msgstr "Et miniprogram som inneholder programmenyene."
 
-#: ../src/applet-main.c:764
+#: src/applet-main.c:762
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License version 3, as published by"
-" the Free Software Foundation."
+"under the terms of the GNU General Public License version 3, as published by "
+"the Free Software Foundation."
 msgstr ""
 "Dette programmet er fri programvare: du kan videreformidle og/eller endre "
 "det under betingelsene i GNU General Public License versjon 3, som utgis av "
 "Free Software Foundation."
 
-#: ../src/applet-main.c:767
+#: src/applet-main.c:765
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranties of MERCHANTABILITY, "
@@ -70,23 +94,31 @@ msgstr ""
 "TILFREDSSTILLENDE KVALITET eller EGNETHET FOR EN BESTEMT HENSIKT. Se GNU "
 "General Public License for flere detaljer."
 
-#: ../src/applet-main.c:771
+#: src/applet-main.c:769
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" this program.  If not, see <http://www.gnu.org/licenses/>."
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
 "Du skal ha fått en kopi av GNU General Public License med dette programmet. "
 "Hvis ikke, se <http://www.gnu.org/licenses/>."
 
-#: ../src/applet-main.c:783
+#: src/applet-main.c:779
+msgid ""
+"Copyright © 2009-2010 Canonical, Ltd.\n"
+"Copyright © 2011-2020 MATE developers"
+msgstr ""
+"Opphavsrett © 2009-2010 Canonical, Ltd.\n"
+"Opphavsrett © 2011-2020 MATE-utviklerne"
+
+#: src/applet-main.c:782
 msgid "An applet to hold your application menus."
 msgstr "Et miniprogram som viser programmenyene dine."
 
-#: ../src/applet-main.c:785
+#: src/applet-main.c:784
 msgid "An applet to hold all of the system indicators."
 msgstr "Et miniprogram som holder orden på systemindikatorene."
 
-#: ../src/applet-main.c:789
+#: src/applet-main.c:788
 msgid "translator-credits"
 msgstr ""
 "Send en e-post om du finner feil eller mangler i oversettelsen.\n"
@@ -100,19 +132,18 @@ msgstr ""
 "\n"
 "Av totalt 11597 tekststrenger."
 
-#: ../src/applet-main.c:793
+#: src/applet-main.c:792
 msgid "MATE Website"
 msgstr "Nettsiden til MATE"
 
-#: ../src/applet-main.c:938
+#: src/applet-main.c:937
 msgid "_About"
 msgstr "Om"
 
-#: ../src/applet-main.c:957
+#: src/applet-main.c:956
 msgid "Indicator Applet Application Menu"
 msgstr "Indikator miniprogram programmeny"
 
-#. A label to allow for click through
-#: ../src/applet-main.c:1020
+#: src/applet-main.c:1018
 msgid "No Indicators"
 msgstr "Ingen indikatorer"
